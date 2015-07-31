@@ -6,6 +6,6 @@
    * [Flexibility](the_goals/flexibility.md)
    * [Standarization](the_goals/standarization.md)
 * [The Protocols](protocols/README.md)
-   * [MSUAP](protocols/msupa.md)
+   * [MSUAP](protocols/msuap.md)
    * [OSYNCP](protocols/osyncp.md)
    * [OpenCloudMesh](protocols/opencloudmesh.md)
