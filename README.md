@@ -52,3 +52,16 @@ The goals to achieve with this project are three:
 
 
 **NOTE: The only working solution to provide a high scalable sync and share service nowadays is CERNBox, using OwnCloud and EOS**
+
+## LICENSE
+
+ClawIO project is published under the  AGPLv3 license.
+
+## Contribute to this manual
+
+The source code of this manual is hosted on Github, feel free to contribute at  https://github.com/clawio/doc
+
+## Contact information
+
+* Twitter: [@clawio](https://twitter.com/clawio)
+* Email: [hugo@clawio.co](mailto:hugo@clawio.co)
