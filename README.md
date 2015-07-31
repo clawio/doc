@@ -1,45 +1,54 @@
 # Introduction
 
-# Introduction
+ClawIO is a live prototype implementation of a high scalable, flexible and standard-based synchronization and sharing platform.
 
-ClawIO is an open source on-premise cloud storage scalable sync and share server.
+## Why ClawIO?
 
-## Why another sync and share server ?
+Cloud computing introduces a different way of communicate with computer services, from email communications to the usage of social networks. 
 
-There are three reasons for the creation of this project:
+With this paradigm the heavy and hard job has been moved from the client to remote servers,
+converting the client into a thin client promoting for mobility and
+network pervasiveness. 
 
-1. Creation of a scalable sync and share server 
+Cloud storage is a special type of cloud service
+with the primary goal of providing a pervasive and coherent access to data from a variety of devices.
 
-that provides synchronization and sharing capabilites on top of existing storage solutions.
+The usage of cloud storage services like DropBox has been very successful because they provide a convenient way for people to synchronize and share their data across different devices. 
 
-ClawIO primary goal is to be used on top of huge data repositories based on modern exabyte-scale storage systems like EOS or GPFS, fulfilling the requirements in terms of speed and easiness without lossing performance.
+The adoption of these proprietary solutions has some potential problems:
 
-ClawIO is a pioner offering Federated Cloud Sharing, a new way for organizations to collaborate sharing data across differents clouds. 
+* Off-premise deployments: data is outside the control of your
+  organization with unclear business and security policies.
 
-## LICENSE
-ClawIO and its desktop and mobile clients are published under the AGPLv3.
+* Closed source code: the application logic is hidden, without the
+  possibility to customize or optimize the code.
+
+* Unclear service level: the data confidentiality and jurisdiction may
+  be in risk.
+
+To handle these problems, in the last five years, some open source
+solutions came to play the sync and share game. The most popular
+products are OwnCloud, SeaFile, PowerFolder and Pydio, which provide open source and on-premise solutions to online cloud storage.
+
+These products offer the sync and share layer in top of different storage back ends like local storage, network storage like NFS or object storage like Amazon S3 or OpenStack Swift, among others.
+
+None of these products offer a high-performance integration with a petabyte-scale storage backend.
+
+The only actual solution to this problem is the[ CERNBox project](http://cernbox.web.cern.ch/).
+
+I am one the main developers of the CERNBox project, and my main job is the integration of the OwnCloud Web Server with [EOS](http://eos.readthedocs.org/en/latest/), the CERN multi-petabyte storage.  
+
+After the successful creation and service launch of the CERNBox project, some architectural problems found in the base OwnCloud Web Serber core appear.
+
+To understand more about the integration problems and the solution provided with CERNBox, read my thesis: [CERNBox: Petabyte-scale synchronization and sharing service](https://github.com/labkode/tfg/raw/master/tfg.pdf).
+
+ClawIO goes beyond CERNBox, taking the ideas and design optimizations to create a live prototype of a high scalable synchronization and sharing server.
+
+The goals to achieve with this project are three:
+
+1. Scalability
+2. Flexibility
+3. Standarization
 
 
-
-
-
-
-ClawIO is a reference implementation prototype of two protocols:
-
-* The Open Synchronization Protocol.
-* The OpenCloudMesh Protocol
-
-ClawIO is also sync and share server focused with scalability in mind its architectural design.
-
-is an open source on-premise cloud storage platform that provides synchronization and sharing capabilites on top of existing storage solutions.
-
-ClawIO primary goal is to be used on top of huge data repositories based on modern exabyte-scale storage systems like EOS or GPFS, fulfilling the requirements in terms of speed and easiness without lossing performance.
-
-ClawIO is a pioner offering Federated Cloud Sharing, a new way for organizations to collaborate sharing data across differents clouds. 
-
-## LICENSE
-ClawIO and its desktop and mobile clients are published under the AGPLv3.
-
-
-
-
+**NOTE: The only working solution to provide a high scalable sync and share service nowadays is CERNBox, using OwnCloud and EOS**
