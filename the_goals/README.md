@@ -1,5 +1,5 @@
 # The Goals
 
-* [Scalability](scalability.md)
+* [Scalability](Scalability.md)
 * [Flexibility](flexibility.md)
 * [Standarization](standarization.md)
