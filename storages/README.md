@@ -50,7 +50,7 @@ If your storage does not provide this feature, you need to have a component on t
 
 The term DAS (Direct Access to Storage) defines the capability of a storage backend to be used from a variety of clients without losing the high scalable synchronization capability.
 
-Only storages with these features built-in (not as external components) can offfer DAS:
+Only storages with these features built-in (not as external components) can offer DAS:
 
 * Data store
 * Namespace
@@ -61,5 +61,9 @@ Only storages with these features built-in (not as external components) can offf
 
 ## HASD (Homogeneous Access to Share Data)
 
-The term HASD (Homogeneous Access to Share Data) defines the capability of a storage backend for maintaining the ACL consistency independent of the clients.
+The term HASD (Homogeneous Access to Share Data) defines the capability of a storage backend for maintaining the ACL (Access Control List) consistency independent of the clients accessing the shared data.
+
+## Why DAS and HASD are so important ?
+
+ 
 
