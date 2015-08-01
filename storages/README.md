@@ -9,6 +9,7 @@ The perfect storage for a sync and share server is the one that provides the fol
 * **Unique resource ID for all resources within the namespace**
 * **Propagation of resource modification botom-up in the namespace**
 
+
 ClawIO is very flexible and will adapt its architecture depending of the features offered by the storages.
 
 ## Data store
