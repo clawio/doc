@@ -2,44 +2,43 @@
 
 There are different types of storages and the goal of ClawIO is to be flexible to be able to use all of them independent of their architecture.
 
-To provide a scalable sync and share server ClawIO behavies differently depending on the stoage used based on this three features.
-
 The perfect storage for a sync and share server is the one that provides the following features built-in:
 
+* **Data storage**
 * **Namespace**
 * **Unique resource ID**
 * **Propagation of changes in the namespace**
 
-## Namespace
+ClawIO is very flexible and will adapt its architecture depending of the features offered by the storages.
 
-The namespace or file catalog is the component reponsible for the handling of the metadata of all the resources inside the data storage.
+## Data store
 
-Most of the filesystems have this concept of namespace.
+The data storage is the component of the storage responsible for interacting the data.
 
-For example, if you are using local storage, you are able to create a directory hierarchy and you can navigate trough it.
+## Namespace (Metadata store)
 
-If you storage is object store, you only have a data store nd you need to create the namespace on top of the data store.
+The namespace, file catalog or metadata store is the component responsible for the handling of the metadata of all the resources inside the data storage.
+
+It usually keeps track of the hierarchy of the resources and extra information like modification time, checksum, size ...
 
 ## Unique Resource ID
 
 For being able to scale every storage must provide a unique resource ID for every resource inside the storage.
 
-This is required to handle remote moves in the syncrhonization client to avoid a delete+upload operation.
+This is required to handle remote moves in the synchronization client to avoid a **delete + upload** operation.
 
-If the storage does not provide this unique ID, you need to have a system on top of your storage that provides it.
+If the storage does not provide this unique ID, you need to have a component on top of your storage that provides it.
 
 ## Propagation of changes in the namespace
 
-When a file is modified, its ETag is modified, but this change must be propagated botom-up to the top level directory to help the synchronization client to scale (avoiding the traverse of all the namespace for discovering changes).
+When a file is modified, its modification (mtime, ETag or custom attribute) must be propagated botom-up to the top level directory to help the synchronization client to scale (avoiding the recursive traversal of all the namespace for discovering changes).
 
-EOS is the only storage backend that provides this functionality built-in.
-
-If your storage does not provide this feature, you need to construct an alternative on top of it.
+If your storage does not provide this feature, you need to have a component on top of your storage that provides it.
 
 ## Comparison table of storage backends
 
-|  | Namespace built-in | Unique Resource ID | Propagation of ETag |
-| -- | -- | -- | -- |
-| Local Storage | ✔ |  ✗ | ✗ |
-| Amazon S3 | ✗ | ✗ | ✗ |
-| EOS | ✔ | ✔ | ✔ |
+|  | Data store| Namespace | Unique Resource ID | Propagation of changes 
+| -- | -- | -- | -- | -- |
+| Local Storage | ✔ | ✔ |  ✗ | ✗ |
+| Amazon S3 | ✔ | ✗ | ✗ | ✗ |
+| EOS | ✔ | ✔ | ✔ | ✔ |
