@@ -72,9 +72,9 @@ Only storages with these features built-in (not as external components) can offe
 
 **EOS is the only known storage backend that provides scalable DAS at the time of this writing**.
 
-## HASD (Homogeneous Access to Share Data)
+## HASD (Homogeneous Access to Shared Data)
 
-The term HASD (Homogeneous Access to Share Data) defines the capability of a storage backend for maintaining the ACL (Access Control List) consistency independently of the clients accessing the shared data.
+The term HASD (Homogeneous Access to Shared Data) defines the capability of a storage backend for maintaining the ACL (Access Control List) consistency independently of the clients accessing the shared data.
 
 None of the traditional Sync and Share Platforms in the market take advantage of HASD.
 
