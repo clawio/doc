@@ -29,9 +29,11 @@ This is required to handle remote moves in the synchronization client to avoid a
 
 If the storage does not provide this unique ID, you need to have a component on top of your storage that provides it.
 
-## Propagation of changes in the namespace
+## Propagation of resource modification botom-up in the namespace
 
-When a file is modified, its modification (mtime, ETag or custom attribute) must be propagated botom-up to the top level directory to help the synchronization client to scale (avoiding the recursive traversal of all the namespace for discovering changes).
+When a resource is modified, its modification must be propagated botom-up to the top level directory to help the synchronization client to scale (avoiding the recursive traversal of all the namespace for discovering changes).
+
+Usually, the attributes used for reflecting the modification of a resource are the mtime (modification time) or ETag, but a custom one can be used also.
 
 If your storage does not provide this feature, you need to have a component on top of your storage that provides it.
 
