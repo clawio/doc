@@ -42,7 +42,7 @@ After the successful creation and service launch of the CERNBox project, some ar
 
 To understand more about the integration problems and the solution provided with CERNBox, read my thesis: [CERNBox: Petabyte-scale synchronization and sharing service](https://github.com/labkode/tfg/raw/master/tfg.pdf).
 
-ClawIO goes beyond CERNBox, taking the ideas and design optimizations to create a live prototype of a high scalable synchronization and sharing server.
+ClawIO goes beyond CERNBox, taking the ideas and design optimizations from it to create a live prototype of a high scalable synchronization and sharing server.
 
 The goals to achieve with this project are three:
 
