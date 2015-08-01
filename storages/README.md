@@ -76,12 +76,10 @@ Only storages with these features built-in (not as external components) can offe
 
 The term HASD (Homogeneous Access to Share Data) defines the capability of a storage backend for maintaining the ACL (Access Control List) consistency independently of the clients accessing the shared data.
 
-None of the Open Source Sync and Share Platform in the market offer HASD.
+None of the traditional Sync and Share Platforms in the market take advantage of HASD.
 
-To offer HASD the ACLs MUST be kept inside the storage and not in external components.
+To offer HASD the ACLs **MUST** be kept inside the storage and not in external components.
 
-Traditional Sync and Share platforms have an ad-hoc component (usually and SQL DB) inside the sync and share server to handle the ACLs independently of the ACLs support provided by the storage.
+Traditional Sync and Share platforms have an ad-hoc component (usually a SQL Database) inside the sync and share server to handle the ACLs independently of the HASD support provided by the storage.
 
-ClawIO and CERNBox offer HASD, propagating share information to the underlying storage, creating new ways of collaboration.
-
-**ClawIO and CERNBox are the only ones that provide HASD at the time of this writing.**
+**ClawIO and CERNBox are the only ones taking advantage of HASD, propagating share information to the underlying storage, creating new ways of collaboration and exotic new workflows.**
