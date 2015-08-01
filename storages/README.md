@@ -4,24 +4,24 @@ There are different types of storages and the goal of ClawIO is to be flexible t
 
 The perfect storage for a sync and share server is the one that provides the following features built-in:
 
-* **Data storage**
-* **Namespace**
-* **Unique resource ID**
-* **Propagation of changes in the namespace**
+* **Data store**
+* **Namespace (Metadata store)**
+* **Unique resource ID for all resources within the namespace**
+* **Propagation of resource modification botom-up in the namespace**
 
 ClawIO is very flexible and will adapt its architecture depending of the features offered by the storages.
 
 ## Data store
 
-The data store is the component of the storage responsible for interacting the data.
+The data store is the component of the storage responsible for keeping and serving the binary data.
 
 ## Namespace (Metadata store)
 
-The namespace, file catalog or metadata store is the component responsible for the handling of the metadata of all the resources inside the data storage.
+The namespace, metadata store or file catalog is the component responsible for the handling of the metadata of all the resources inside the data storage.
 
 It usually keeps track of the hierarchy of the resources and extra information like modification time, checksum, size ...
 
-## Unique Resource ID
+## Unique resource ID for all resources within the namespace
 
 For being able to scale every storage must provide a unique resource ID for every resource inside the storage.
 
