@@ -57,7 +57,11 @@ Only storages with these features built-in (not as external components) can offe
 * Unique Resource ID
 * Propagation of changes
 
-**EOS is the only known storage backend that provides DAS at the time of this writing**.
+
+
+Sync and Share platforms using  NFS as storage backend can provide DAS, but in a very inefficient way due to NFS lack of built-in Unique Resource ID and the Change Propagation features.
+
+**EOS is the only known storage backend that provides scalable DAS at the time of this writing**.
 
 ## HASD (Homogeneous Access to Share Data)
 
@@ -67,5 +71,6 @@ The term HASD (Homogeneous Access to Share Data) defines the capability of a sto
 
 ## Why DAS and HASD are so important ?
 
+All of the 
  
 
