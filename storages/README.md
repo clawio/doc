@@ -63,7 +63,7 @@ Only storages with these features built-in (not as external components) can offe
 
 The term HASD (Homogeneous Access to Share Data) defines the capability of a storage backend for maintaining the ACL (Access Control List) consistency independent of the clients accessing the shared data.
 
-**CERNBox and ClawIO are the only ones that provide HASD at the time of this writing.**
+**ClawIO and CERNBox are the only ones that provide HASD at the time of this writing.**
 
 ## Why DAS and HASD are so important ?
 
