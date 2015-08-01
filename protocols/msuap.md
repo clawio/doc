@@ -2,7 +2,7 @@
 
 ## Abstract
 
-The Multi Storage Universal Access Protocol (MSUAP) is an application level protocol for accessing heterogeneous storage backends.
+The Multi Storage Universal Access Protocol (MSUAP) is a protocol that defines a scalable and flexible addressing scheme to communicate with multiple storages..
 
 ## Copyright Notice
 
