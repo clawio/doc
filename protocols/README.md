@@ -29,6 +29,14 @@ Documentation of the OwnCloud sync protocol has been started by Jakub Moscicki a
 
 Also, documentation for a end-to-end checksum has been elaborated by Jakub Mosciki as part of the CERNBox project and can be found [here](https://github.com/cernbox/smashbox/blob/master/protocol/checksum.md).
 
+Discussions about the next generation of the OwnCloud sync protocol are taking place on Klass Freitag's blog, the lead developer of the sync client.
+
+Two blog post to worth reading with the comments are these two:
+
+[ownCloud Chunking NG](https://dragotin.wordpress.com/2015/06/22/owncloud-chunking-ng/)
+
+[ownCloud Chunking NG Part 2: Announcing an Upload](https://dragotin.wordpress.com/2015/07/10/owncloud-chunking-ng-part-2-announcing-an-upload/)
+
 **ClawIO is a reference implementation of OwnCloud sync protocol and the checksum extension.**
 
 ## [OpenCloudMesh](opencloudmesh.md)
