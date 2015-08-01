@@ -20,3 +20,26 @@ For example, if you are using local storage, you are able to create a directory 
 
 If you storage is object store, you only have a data store nd you need to create the namespace on top of the data store.
 
+## Unique Resource ID
+
+For being able to scale every storage must provide a unique resource ID for every resource inside the storage.
+
+This is required to handle remote moves in the syncrhonization client to avoid a delete+upload operation.
+
+If the storage does not provide this unique ID, you need to have a system on top of your storage that provides it.
+
+## Propagation of changes in the namespace
+
+When a file is modified, its ETag is modified, but this change must be propagated botom-up to the top level directory to help the synchronization client to scale (avoiding the traverse of all the namespace for discovering changes).
+
+EOS is the only storage backend that provides this functionality built-in.
+
+If your storage does not provide this feature, you need to construct an alternative on top of it.
+
+## Comparison table of storage backends
+
+|  | Namespace built-in | Unique Resource ID | Propagation of ETag |
+| -- | -- | -- | -- |
+| Local Storage | ✔ |  ✗ | ✗ |
+| Amazon S3 | ✗ | ✗ | ✗ |
+| EOS | ✔ | ✔ | ✔ |
