@@ -9,3 +9,4 @@
    * [MSUAP](protocols/msuap.md)
    * [OSYNCP](protocols/osyncp.md)
    * [OpenCloudMesh](protocols/opencloudmesh.md)
+* [Storage Classification](storages/README.md)
