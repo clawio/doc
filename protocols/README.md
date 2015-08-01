@@ -2,7 +2,7 @@
 
 One goal of ClawIo is being a reference implementation for future synchronization and sharing protocols.
 
-In the moment of this writing, none of the following have a specification draft.
+In the moment of this writing, none of the following protocols have a specification draft.
 
 ##  [MSUAP (Multi-Storage Universal Access Protocol)](msuap.md)
 
