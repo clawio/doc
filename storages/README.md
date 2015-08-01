@@ -68,9 +68,7 @@ Only storages with these features built-in (not as external components) can offe
 * Unique Resource ID
 * Propagation of changes
 
-
-
-Sync and Share platforms using  NFS as storage backend can provide DAS, but in a very inefficient way due to NFS lack of built-in Unique Resource ID and the Change Propagation features.
+*Sync and Share platforms using  NFS as storage backend can provide DAS, but in a very inefficient way due to NFS lack of built-in Unique Resource ID and the Change Propagation features.*
 
 **EOS is the only known storage backend that provides scalable DAS at the time of this writing**.
 
