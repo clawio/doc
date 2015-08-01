@@ -13,7 +13,7 @@ ClawIO is very flexible and will adapt its architecture depending of the feature
 
 ## Data store
 
-The data storage is the component of the storage responsible for interacting the data.
+The data store is the component of the storage responsible for interacting the data.
 
 ## Namespace (Metadata store)
 
