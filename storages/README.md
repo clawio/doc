@@ -59,3 +59,6 @@ Only storages with these features built-in (not as external components) can offf
 
 **The only known storage backend at the time of writing this document is EOS**.
 
+## HATSD (Homogeneous Access to Share Data)
+
+
