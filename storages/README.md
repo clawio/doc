@@ -41,19 +41,21 @@ If your storage does not provide this feature, you need to have a component on t
 
 ## ACL Support
 
-ACL Support is the capability of a storage backend to protect resources using ACLs.
+ACL Support is the capability of a storage backend to protect resources using individual and group permissions.
 
 Modern storage backends like EOS or Amazon S3 offer this feature.
 
-Some local storages like the ones based on [UFS[(https://www.freebsd.org/doc/handbook/fs-acl.html) offer this also.
+Some local storages like the ones based on  [UFS](https://www.freebsd.org/doc/handbook/fs-acl.html) offer it also.
 
-## Comparison table of storage backends
+## Comparison table of storage backends for sync and share purposes
 
-|  | Data store| Namespace | Unique Resource ID | Propagation of changes 
-| -- | -- | -- | -- | -- |
-| Local Storage | ✔ | ✔ |  ✗ | ✗ |
-| Amazon S3 | ✔ | ✗ | ✗ | ✗ |
-| EOS | ✔ | ✔ | ✔ | ✔ |
+|  | Data store| Namespace | Unique Resource ID | Propagation of changes | Storage ACL
+| -- | -- | -- | -- | -- | -- |
+| Local Storage | ✔ | ✔ |  ✗ | ✗  | ✔ * |
+| Amazon S3 | ✔ | ✗ | ✗ | ✗ | ✔ |
+| EOS | ✔ | ✔ | ✔ | ✔ | ✔ |
+
+*Only UFS based 
 
 ## DAS (Direct Access to Storage)
 
