@@ -65,12 +65,14 @@ Sync and Share platforms using  NFS as storage backend can provide DAS, but in a
 
 ## HASD (Homogeneous Access to Share Data)
 
-The term HASD (Homogeneous Access to Share Data) defines the capability of a storage backend for maintaining the ACL (Access Control List) consistency independent of the clients accessing the shared data.
+The term HASD (Homogeneous Access to Share Data) defines the capability of a storage backend for maintaining the ACL (Access Control List) consistency independently of the clients accessing the shared data.
+
+None of the Open Source Sync and Share Platform in the market offer HASD.
+
+To offer HASD the ACLs MUST be kept inside the storage and not in external components.
+
+Traditional Sync and Share platforms have an ad-hoc component (usually and SQL DB) inside the sync and share server to handle the ACLs independently of the ACLs support provided by the storage.
+
+ClawIO and CERNBox offer HASD, propagating share information to the underlying storage, creating new ways of collaboration.
 
 **ClawIO and CERNBox are the only ones that provide HASD at the time of this writing.**
-
-## Why DAS and HASD are so important ?
-
-All of the 
- 
-
