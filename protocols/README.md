@@ -35,3 +35,4 @@ Frank Karlitschek, CTO, Community Leader and Co-Founder of OwnCloud™, explaine
 * [The Next Generation File Sync and Share Technology ](https://owncloud.com/the-next-generation-file-sync-and-share-technology/)
 * [The Federated Architecture of Next Generation File Sync and Share ](https://owncloud.com/the-federated-architecture-of-next-generation-file-sync-and-share/)
 
+Despite the fact of being a good concept, there is not yet a formar specification for this inter-cloud sharing protocol.
