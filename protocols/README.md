@@ -21,4 +21,17 @@ The protocol will deal with these aspects:
 * Deduplication
 * Compression
 
-* [OpenCloudMesh](opencloudmesh.md)
+The protocol must negotiate the best strategy according to the permanent capabilities and dynamic state of the cloud storage provider.
+
+## [OpenCloudMesh](opencloudmesh.md)
+
+The OpenCloudMesh Protocol is a protocol invented by OwnCloud™ to allow inter-cloud sharing between different cloud storage vendors.
+
+Details to join the OpenCloudMesh can be found [here](https://owncloud.com/lp/opencloudmesh/).
+
+Frank Karlitschek, CTO, Community Leader and Co-Founder of OwnCloud™, explained in a series of blog posts the concept and necessity for the OpenCloudMesh.
+
+* [It is time to Federate our Clouds](https://owncloud.com/it-is-time-to-federate-our-clouds/)
+* [The Next Generation File Sync and Share Technology ](https://owncloud.com/the-next-generation-file-sync-and-share-technology/)
+* [The Federated Architecture of Next Generation File Sync and Share ](https://owncloud.com/the-federated-architecture-of-next-generation-file-sync-and-share/)
+
