@@ -39,6 +39,14 @@ Usually, the attributes used for reflecting the modification of a resource are t
 
 If your storage does not provide this feature, you need to have a component on top of your storage that provides it.
 
+## ACL Support
+
+ACL Support is the capability of a storage backend to protect resources using ACLs.
+
+Modern storage backends like EOS or Amazon S3 offer this feature.
+
+Some local storages like the ones based on [UFS[(https://www.freebsd.org/doc/handbook/fs-acl.html) offer this also.
+
 ## Comparison table of storage backends
 
 |  | Data store| Namespace | Unique Resource ID | Propagation of changes 
