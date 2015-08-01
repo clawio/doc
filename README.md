@@ -38,20 +38,18 @@ The only actual solution to this problem is the[ CERNBox project](http://cernbox
 
 I am one the main developers of the CERNBox project, and my main job is the integration of the OwnCloud Web Server with [EOS](http://eos.readthedocs.org/en/latest/), the CERN multi-petabyte storage.  
 
-After the successful creation and service launch of the CERNBox project, some architectural problems found in the base OwnCloud Web Serber core appear.
+After the successful creation and service launch of the CERNBox project, some architectural problems have been found in the core of the OwnCloud Web Server.
 
 To understand more about the integration problems and the solution provided with CERNBox, read my thesis: [CERNBox: Petabyte-scale synchronization and sharing service](https://github.com/labkode/tfg/raw/master/tfg.pdf).
 
-ClawIO goes beyond CERNBox, taking the ideas and design optimizations to create a live prototype of a high scalable synchronization and sharing server.
+ClawIO goes beyond CERNBox, taking the ideas and design optimizations from it to create a live prototype of a higher scalable synchronization and sharing server.
 
 The goals to achieve with this project are three:
 
-1. Scalability
-2. Flexibility
-3. Standarization
+1. **Provide a high scalability sync and share server on top of modern storages**
+2. **Provide a flexible architecture to be used by a variety of modern storages without lossing scalability**
+3. **Be a reference implementation for future sync and share standars that are being created nowadays**
 
-
-**NOTE: The only working solution to provide a high scalable sync and share service nowadays is CERNBox, using OwnCloud and EOS**
 
 ## LICENSE
 
@@ -65,3 +63,6 @@ The source code of this manual is hosted on Github, feel free to contribute at  
 
 * Twitter: [@clawio](https://twitter.com/clawio)
 * Email: [hugo@clawio.co](mailto:hugo@clawio.co)
+
+## DISCLAIMER
+**The only working solution to provide a high scalable sync and share service nowadays is CERNBox, using OwnCloud and EOS**
