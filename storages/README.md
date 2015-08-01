@@ -57,8 +57,9 @@ Only storages with these features built-in (not as external components) can offf
 * Unique Resource ID
 * Propagation of changes
 
-**The only known storage backend at the time of writing this document is EOS**.
+**EOS is the only known storage backend that provides DAS at the time of this writing**.
 
-## HATSD (Homogeneous Access to Share Data)
+## HASD (Homogeneous Access to Share Data)
 
+The term HASD (Homogeneous Access to Share Data) defines the capability of a storage backend for maintaining the ACL consistency independent of the clients.
 
