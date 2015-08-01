@@ -45,3 +45,17 @@ If your storage does not provide this feature, you need to have a component on t
 | Local Storage | ✔ | ✔ |  ✗ | ✗ |
 | Amazon S3 | ✔ | ✗ | ✗ | ✗ |
 | EOS | ✔ | ✔ | ✔ | ✔ |
+
+## DAS (Direct Access to Storage)
+
+The term DAS (Direct Access to Storage) defines the capability of a storage backend to be used from a variety of clients without losing the high scalable synchronization capability.
+
+Only storages with these features built-in (not as external components) can offfer DAS:
+
+* Data store
+* Namespace
+* Unique Resource ID
+* Propagation of changes
+
+**The only known storage backend at the time of writing this document is EOS**.
+
