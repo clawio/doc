@@ -1,4 +1,4 @@
-# Storage Classification
+# Storage Overview
 
 There are different types of storages and the goal of ClawIO is to be flexible to be able to use all of them independent of their architecture.
 
