@@ -27,6 +27,10 @@ OwnCloud synchronization protocol can be a starting point due to the protocol is
 
 Documentation of the OwnCloud sync protocol has been started by Jakub Moscicki as part of the CERNBox project and can be found [here](https://github.com/cernbox/smashbox/blob/master/protocol/protocol.md).
 
+Also, documentation for a end-to-end checksum has been elaborated by Jakub Mosciki as part of the CERNBox project and can be found [here](https://github.com/cernbox/smashbox/blob/master/protocol/checksum.md).
+
+ClawIO is a reference sync and share server implemntation of both OwnCloud protocol and the checksuming extension.
+
 ## [OpenCloudMesh](opencloudmesh.md)
 
 The OpenCloudMesh Protocol is a protocol invented by OwnCloud™ to allow inter-cloud sharing between different cloud storage vendors.
