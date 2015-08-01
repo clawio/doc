@@ -23,6 +23,10 @@ The protocol will deal with these aspects:
 
 The protocol must negotiate the best strategy according to the permanent capabilities and dynamic state of the cloud storage provider.
 
+OwnCloud synchronization protocol can be a starting point due to the protocol is storage backend agnostic and is based on WebDAV industry standard for resource manipulation + custom extensions.
+
+Documentation of the OwnCloud sync protocol has been started by Jakub Moscicki as part of the CERNBox project and can be found [here](https://github.com/cernbox/smashbox/blob/master/protocol/protocol.md).
+
 ## [OpenCloudMesh](opencloudmesh.md)
 
 The OpenCloudMesh Protocol is a protocol invented by OwnCloud™ to allow inter-cloud sharing between different cloud storage vendors.
