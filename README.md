@@ -59,7 +59,7 @@ ClawIO project is published under the  AGPLv3 license.
 
 ## Contribute to this manual
 
-The source code of this manual is hosted on Github, feel free to contribute at  https://github.com/clawio/doc
+The source code of this manual is hosted on Github, feel free to contribute at [GitHub](https://github.com/clawio/doc).
 
 ## Contact information
 
