@@ -34,7 +34,7 @@ products are OwnCloud, SeaFile, PowerFolder and Pydio, which provide open source
 
 These products offer the sync and share layer in top of different storage back ends like local storage, network storage like NFS or object storage like Amazon S3 or OpenStack Swift, among others.
 
-None of these products offer a high-performance integration with a petabyte-scale storage backend.
+None of these products offer a high-performance integration with a petabyte-scale storage backend out of the box.
 
 The only actual solution to this problem is the[ CERNBox project](http://cernbox.web.cern.ch/).
 
@@ -48,9 +48,9 @@ ClawIO goes beyond CERNBox, taking the ideas and design optimizations from it to
 
 The goals to achieve with this project are three:
 
-1. **Provide a high scalability sync and share server on top of modern storages**
-2. **Provide a flexible architecture to be used by a variety of modern storages without lossing scalability**
-3. **Be a reference implementation for future sync and share standars that are being created nowadays**
+1. **Provide a high scalability sync and share server to be used on top of modern storages**
+2. **Provide a flexible architecture to be used by a variety of modern storages without losing scalability**
+3. **Be a reference implementation for future sync and share standards**
 
 
 ## LICENSE
