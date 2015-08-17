@@ -2,6 +2,8 @@
 
 ClawIO is a live prototype implementation of a high scalable, flexible and standard-based synchronization and sharing platform.
 
+This project is part of the R&D process of my bachelor thesis about  [CERNBox: Petabyte-scale synchronization and sharing service](https://github.com/labkode/tfg/raw/master/tfg.pdf) 
+
 ## Why ClawIO?
 
 Cloud computing introduces a different way of communicate with computer services, from email communications to the usage of social networks. 
