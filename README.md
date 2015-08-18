@@ -2,7 +2,7 @@
 
 ClawIO is a live prototype implementation of a high scalable, flexible and standard-based synchronization and sharing platform.
 
-This project is part of the R&D process of my bachelor thesis about  [CERNBox: Petabyte-scale synchronization and sharing service](https://github.com/labkode/tfg/raw/master/tfg.pdf) 
+This project is part of the R&D process of my bachelor thesis about **CERNBox: Petabyte-scale synchronization and sharing service.**
 
 ## Why ClawIO?
 
@@ -42,7 +42,6 @@ I am one the main developers of the CERNBox project, and my main job is the inte
 
 After the successful creation and service launch of the CERNBox project, some architectural problems have been found in the core of the OwnCloud Web Server.
 
-To understand more about the integration problems and the solution provided with CERNBox, read my thesis: [CERNBox: Petabyte-scale synchronization and sharing service](https://github.com/labkode/tfg/raw/master/tfg.pdf).
 
 ClawIO goes beyond CERNBox, taking the ideas and design optimizations from it to create a live prototype of a higher scalable synchronization and sharing server.
 
