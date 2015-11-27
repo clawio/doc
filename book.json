@@ -1,6 +1,4 @@
 {
-    "plugins": [
-        "-28msec"
-    ],
+    "plugins": [],
     "pluginsConfig": {}
 }
