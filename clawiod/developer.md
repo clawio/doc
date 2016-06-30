@@ -1,4 +1,4 @@
-# ClawIO Server Daemon (clawiod)
+# Developer
 
 This component provides the APIs to manage your storage. It has been designed
 to be scalable and very flexible in order to extend its features. The official
