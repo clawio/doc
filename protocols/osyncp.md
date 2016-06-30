@@ -1,1 +1,0 @@
-# OSYNCP (Open Synchronization Protocol)
