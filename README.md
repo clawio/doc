@@ -12,4 +12,4 @@ ClawIO components are publicly available under [AGPLv3](https://www.gnu.org/lice
 
 # About this manual
 
-The "source code" of this manual is hosted on GitHub [https://github.com/clawio/docs](https://github.com/clawio/docs)
+The "source code" of this manual is hosted on GitHub [https://github.com/clawio/docs](https://github.com/clawio/doc)
