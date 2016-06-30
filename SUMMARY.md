@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Getting started](hello-world.md)
+* [Hello World!](hello-world.md)
 * [Overview](overview/README.md)
 	* [ClawIO Components](overview/components.md)
 	* [ClawIO Server Daemon](overview/clawiod.md)
@@ -9,6 +9,7 @@
 	* [For Home](deployment/home/README.md)
 	* [For Enterprise](deployment/enterprise/README.md)
 * [Configuration and Customization](configuration.md)
+* [Data Model](data-model.md)
 * [ClawIO API v1](api/README.md)
 	* [API Basics](api/README.md#api-basics)
 	* [Quick Start](api/README.md#quick-start)
@@ -27,5 +28,6 @@
 		* [Download a BLOB](api/README.md#download-a-blob)
 	* [WebDAV API](api/README.md#webdav-api)
 	* [OCWebDAV API](api/README.md#ocwebdav-api)
+
 
 

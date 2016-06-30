@@ -13,8 +13,19 @@ curl -H 'Authorization: Bearer <Token>' http://localhost:1502/api/v1/authenticat
 
 The api key can be obtained from the authenticaton API. See the <a href="#quick-start">Quick Start</a> for details.
 
+## API Errors
 
-## <a id="quick-start"></a>Quick Start ##
+Each endpoint defines the meaning of the HTTP Status Codes.
+As a general rule, a 400 error will contain a JSON body explaining the cause of the error:
+
+```json
+{
+    "code": 4,
+    "message": "user or password do not match"
+}
+```
+
+## Quick Start
 
 **Obtain an access token**
 
@@ -94,68 +105,6 @@ pong
 **Success**
 
 Response code is 200
-
-## Data API ###
-
-### Upload a blob###
-
-**PUT** http://localhost:1502/api/v1/data/upload/{pathspec}
-
-**Path parameters**
-
-- pathspec: the new path of the blob
-
-**Body content**
-
-The body is the raw binary content of the file
-
-**Headers**
-
-- Checksum: the checksum for the blob, for example: `md5:f3b2d851c50951f930588f9a4ea5db2c`
-
-**Sample request**
-
-```bash
-curl -i -X PUT http://localhost:1502/api/v1/data/upload/clawio_rocks.txt --data-binary @clawio_rocks.txt -H "Authorization: Bearer <Token>"
-```
-
-**Success**
-
-Response code is 201
-
-**Errors**
-
-- 400: the request does not contain a body
-- 404: the path does not exist 
-- 412: the checksum sent does not match the server computed checksum 
-- 413: the body of the request is bigger than the allowed maximun upload file size
-
-### Download a BLOB###
-
-**GET** http://localhost:1502/api/v1/data/download/{pathspec}
-
-**Path parameters**
-
-- pathspec: the path to the blob
-
-**Sample request**
-
-```bash
-curl http://localhost:1502/api/v1/data/download/clawio_rocks.txt -H "Authorization: Bearer <Token>" -o /tmp/clawio_rocks.txt
-```
-
-**Sample response**
-
-The response body is the content of the blob
-
-**Success**
-
-Response code is 200
-
-**Errors**
-
-- 404: the path does not exist
-
 
 ## MetaData API
 
@@ -330,6 +279,69 @@ Response code is 200
 - 400: the object cannot be moved to target because:
 	- you are trying to move an object of type blob to a tree or viceversa
 	- if source and target are tree objects and target is not empty 
+
+## Data API ###
+
+### Upload a blob###
+
+**PUT** http://localhost:1502/api/v1/data/upload/{pathspec}
+
+**Path parameters**
+
+- pathspec: the new path of the blob
+
+**Body content**
+
+The body is the raw binary content of the file
+
+**Headers**
+
+- Checksum: the checksum for the blob, for example: `md5:f3b2d851c50951f930588f9a4ea5db2c`
+
+**Sample request**
+
+```bash
+curl -i -X PUT http://localhost:1502/api/v1/data/upload/clawio_rocks.txt --data-binary @clawio_rocks.txt -H "Authorization: Bearer <Token>"
+```
+
+**Success**
+
+Response code is 201
+
+**Errors**
+
+- 400: the request does not contain a body
+- 404: the path does not exist 
+- 412: the checksum sent does not match the server computed checksum 
+- 413: the body of the request is bigger than the allowed maximun upload file size
+
+### Download a BLOB###
+
+**GET** http://localhost:1502/api/v1/data/download/{pathspec}
+
+**Path parameters**
+
+- pathspec: the path to the blob
+
+**Sample request**
+
+```bash
+curl http://localhost:1502/api/v1/data/download/clawio_rocks.txt -H "Authorization: Bearer <Token>" -o /tmp/clawio_rocks.txt
+```
+
+**Sample response**
+
+The response body is the content of the blob
+
+**Success**
+
+Response code is 200
+
+**Errors**
+
+- 404: the path does not exist
+
+
 
 ## WebDAV API ##
 * This API implements the WebDAV protocol.
