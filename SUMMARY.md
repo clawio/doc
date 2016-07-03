@@ -12,25 +12,36 @@
 
 * [ClawIO Server Daemon](clawiod/README.md)
 	* [Deployment](clawiod/deployment.md)
-	* [Authentication](clawiod/authentication.md)
+	* [Authentication](clawiod/authentication/README.md)
+		* [Memory Controller](clawiod/authentication/memory.md)
+		* [SQL Controller](clawiod/authentication/sql.md)
 	* [Storage](clawiod/storage.md)
+		* [Simple](clawiod/storage/simple.md)
+		* [OCSQL](clawiod/storage/ocsql.md)
 	* [HTTPS & HTTP/2](clawiod/tls.md)
 	* [Logs](clawiod/logs.md)
 	* [Monitoring](clawiod/monitoring.md)
-	* [ownCloud Synchronisation](clawiod/owncloud.md)
-	* [Developer](clawiod/developer.md)
+	* [ownCloud Synchronisation](clawiod/owncloud/README.md)
+	* [Configuration Directives](clawiod/configuration.md)
+	* [Developer Docs](clawiod/developer.md)
 
 
 
 
 * [ClawIO Web UI](webui/README.md)
+	* [Deployment](webui/deployment.md)
+	* [Configuration](webui/configuration.md)
+	* [Applications](webui/applications/README.md)
+		* [Objects](webui/applications/objects/README.md)
+			* [Upload Object](webui/applications/objects/upload-object.md)
+			* [Create Object](webui/applications/objects/create-object.md)
+			* [Create Tree](webui/applications/objects/create-tree.md)
+			* [Delete Object](webui/applications/objects/delete-object.md)
+			* [Enter Batch Mode](webui/applications/objects/enter-batch-mode.md)
+			* [Filter](webui/applications/objects/filter.md)
+		* [Profile](webui/applications/profile/README.md)
+	* [Develper Docs](webui/developer.md)
 
-
-* [Deployment](deployment/README.md)
-	* [For Home](deployment/home/README.md)
-	* [For Enterprise](deployment/enterprise/README.md)
-
-* [Configuration and Customization](configuration.md)
 
 * [ClawIO API v1](api/README.md)
 	* [API Basics](api/README.md#api-basics)

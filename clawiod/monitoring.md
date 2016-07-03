@@ -28,7 +28,7 @@ go_memstats_alloc_bytes_total 8.5737784e+07
 ```
 The metrics are there but it is quite difficult to see what is happening on our server.
 
-Fortunately, ClawIO exposes metrics understable by
+Fortunately, ClawIO exposes metrics understandable by
 [Prometheus](https://prometheus.io/), a revolutionay and leading open-source
 monitoring solution, that will inject these ugly data in a high dimensional
 time series data model that we can query.
