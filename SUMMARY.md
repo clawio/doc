@@ -5,10 +5,6 @@
 * [Hello World!](hello-world.md)
 
 * [Overview](overview/README.md)
-	* [ClawIO Components](overview/components.md)
-	* [ClawIO Server Daemon](overview/clawiod.md)
-
-* [Data Model](data-model.md)
 
 * [ClawIO Server Daemon](clawiod/README.md)
 	* [Deployment](clawiod/deployment.md)
@@ -25,9 +21,6 @@
 	* [Configuration Directives](clawiod/configuration.md)
 	* [Developer Docs](clawiod/developer.md)
 
-
-
-
 * [ClawIO Web UI](webui/README.md)
 	* [Deployment](webui/deployment.md)
 	* [Configuration](webui/configuration.md)
@@ -41,7 +34,6 @@
 			* [Filter](webui/applications/objects/filter.md)
 		* [Profile](webui/applications/profile/README.md)
 	* [Develper Docs](webui/developer.md)
-
 
 * [ClawIO API v1](api/README.md)
 	* [API Basics](api/README.md#api-basics)
@@ -61,6 +53,3 @@
 		* [Download a BLOB](api/README.md#download-a-blob)
 	* [WebDAV API](api/README.md#webdav-api)
 	* [OCWebDAV API](api/README.md#ocwebdav-api)
-
-
-
