@@ -22,7 +22,7 @@ filesystems.
 * **WebDAV API**:  this API exposes a WebDAV endpoint to WebDAV clients like
 Finder MacOS, CyberDuck, Cadaver and other WebDAV compliant applications.
 
-* **OSP WebDav API**: this API increases the WebDAV API to implement the
+* **OCWebDav API**: this API increases the WebDAV API to implement the
 ownCloud Synchronization Protocol.  ownCloud sync clients can be connected to this API
 to synchronize the data stored on ClawIO.
 

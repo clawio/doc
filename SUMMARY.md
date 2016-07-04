@@ -11,7 +11,7 @@
 	* [Authentication](clawiod/authentication/README.md)
 		* [Memory Controller](clawiod/authentication/memory.md)
 		* [SQL Controller](clawiod/authentication/sql.md)
-	* [Storage](clawiod/storage.md)
+	* [Storage](clawiod/storage/README.md)
 		* [Simple](clawiod/storage/simple.md)
 		* [OCSQL](clawiod/storage/ocsql.md)
 	* [HTTPS & HTTP/2](clawiod/tls.md)
@@ -33,7 +33,6 @@
 			* [Enter Batch Mode](webui/applications/objects/enter-batch-mode.md)
 			* [Filter](webui/applications/objects/filter.md)
 		* [Profile](webui/applications/profile/README.md)
-	* [Develper Docs](webui/developer.md)
 
 * [ClawIO API v1](api/README.md)
 	* [API Basics](api/README.md#api-basics)

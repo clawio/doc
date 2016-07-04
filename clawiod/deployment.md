@@ -34,10 +34,10 @@ When you have your secret create a [configuration file](../configuration) with t
 
 Once clawiod is up and running you can interact with it issuing raw curl commands to the [API](../api) or use the following clients:
 
-- [ClawIO Terminal Controller](../clawioctl)
-- [ClawIO Web UI](../webui)
-- [WebDAV Clients](webdav.md)
-- [ownCloud Sync clients](ocwebdav.md)
+- [ClawIO Terminal Controller](../clawioctl/README.md)
+- [ClawIO Web UI](../webui/README.md)
+- [ownCloud Sync clients](https://owncloud.org/install/#install-clients)
+- Generic WebDAV Clients like [CyberDuck](https://cyberduck.io/) or built-in clients like [Finder in MacOS](https://support.apple.com/kb/ph18514?locale=en_US).
 
 
 
